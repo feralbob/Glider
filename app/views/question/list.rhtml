@@ -1,0 +1,19 @@
+<div id="col2_big">
+  <h1>Questions List</h1>
+
+  <h2>Submit a question for the presenter</h2>
+
+  <%= render :partial => 'create' %>
+  <Br><br><br>
+
+  <h2>Vote on questions submitted:</h2>
+  <% if @questions.empty? %>
+    No questions submitted yet... Submit one! <br><br>
+
+  <% else %>
+    <%= render :partial => 'questions', :object => @questions %>
+  <% end %>
+
+</div>
+
+<%=  render :partial => 'ajax/chat_form', :layout => false %>

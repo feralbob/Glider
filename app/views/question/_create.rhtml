@@ -1,0 +1,6 @@
+
+<% form_for(:question, :url => { :action => 'create' }, :html => { :multipart => true }) do |f| -%>
+  <%= f.error_messages %>
+  <%= f.text_field :question, :size => 100 %>
+  <%= submit_tag 'Submit' %>
+<% end -%>

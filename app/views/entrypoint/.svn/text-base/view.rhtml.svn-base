@@ -1,0 +1,17 @@
+<h3>Entry point</h3>
+<p>The entry point defines where your presentation starts.</p>
+<% unless @entrypoint  %>
+  <p>There is no entry point set yet</p>
+<% else %>
+  <p>You already have an entrypoint set. It's this chain:</p>
+    <%= render :partial => 'chain/chain_slides', :object => @entrypoint.chain.slides %>  
+<% end %>
+
+  <h3>Other chains available</h3>
+  <p>Click on an chain below to set it as the entrypoint</p>
+<% @chains.each do |chain| %>
+  <a href="<%= url_for :controller => 'entrypoint', :action => 'create', :chain_id => chain.id %>">
+    <ul><%= render :partial => 'chain/chain_slides', :object => chain.slides %></ul>
+  </a>
+<% end %>
+  <p>or <a href="/chain/new">create an chain</a>

@@ -1,0 +1,7 @@
+<h1>Displays</h1>
+
+<ul>
+  <li><%= link_to 'Presenter Display', :controller => 'presentation', :action => 'presenter_display' %>
+  <li><%= link_to 'Projector Display', :controller => 'presentation', :action => 'projector_display' %>
+  <li><%= link_to 'Audience home', :controller => 'audience', :action => 'home' %>
+</ul>

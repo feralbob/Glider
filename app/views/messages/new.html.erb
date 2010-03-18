@@ -1,0 +1,20 @@
+<% @messages.reverse_each do |m| %>
+  <div id="previous_messages">
+    <p class="message_display">
+      <%=h "#{m.created_at.strftime('%I:%M%p')} #{m.user.username}: #{m.message}" %>
+    </p>
+  </div>
+<% end %>
+
+<% form_for(@message) do |f| %>
+  <%= f.error_messages %> 
+  <p>
+    <%= f.text_field :message, :class => 'message_box' %>
+    <%= f.submit 'Post message' %>
+  </p>
+<% end %>
+
+<p class="footer_note">
+  You're <%=h @user.username %> -
+  <%= link_to 'Logoff', @user, :confirm => 'Are you sure?', :method => :delete %>
+</p>

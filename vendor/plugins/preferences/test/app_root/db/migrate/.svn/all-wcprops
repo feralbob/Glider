@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/glider/!svn/ver/2/glider/vendor/plugins/preferences/test/app_root/db/migrate
+END
+004_migrate_preferences_to_version_1.rb
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/glider/!svn/ver/2/glider/vendor/plugins/preferences/test/app_root/db/migrate/004_migrate_preferences_to_version_1.rb
+END
+001_create_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/glider/!svn/ver/2/glider/vendor/plugins/preferences/test/app_root/db/migrate/001_create_users.rb
+END
+003_create_employees.rb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/glider/!svn/ver/2/glider/vendor/plugins/preferences/test/app_root/db/migrate/003_create_employees.rb
+END
+002_create_cars.rb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/glider/!svn/ver/2/glider/vendor/plugins/preferences/test/app_root/db/migrate/002_create_cars.rb
+END

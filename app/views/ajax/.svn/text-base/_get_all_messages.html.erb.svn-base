@@ -1,0 +1,9 @@
+<ul id="list-scroll">
+  <% unless @messages.empty? -%>
+    <% @messages.reverse_each do |m| -%>
+      <li><b><%= m.user.username %></b>
+        <ul><li><%= m.message %></li></ul>
+      </li>
+    <% end -%>
+  <% end -%>
+</ul>

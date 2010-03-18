@@ -1,0 +1,142 @@
+
+#col3 {
+    width: 240px;
+    float: left;
+    margin-left: 10px;
+    font-size: 11px;
+}
+
+#cont_chat {
+    width: 240px;
+    float:left;
+}
+
+#receive_chat {
+    /*width: 718px;*/
+    width:220px;
+    float: left;
+    padding: 10px;
+    background-color: #e5e5e5;
+    border: 1px solid #d1d1d1;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+#cont_chat a {
+    color: #040404;
+}
+
+#receive_chat ul {
+    width:210px;
+    /*height: 280px;*/
+    /*height: 260px;*/
+    height: 340px;
+    float: left;
+    margin-left: 10px;
+    overflow: auto;
+}
+
+#receive_chat ul li {
+    width: 190px;
+    float: left;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #fff;
+    line-height: 18px;
+    font-size: 11px;
+}
+
+#receive_chat ul li ul {
+    width: 180px;
+    height: auto;
+    float: left;
+    margin-left: 5px;
+}
+#receive_chat ul li ul li {
+    width: 180px;
+    float: left;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+#attach-file {
+    width: 230px;
+    float: left;
+    /*	padding-bottom: 10px;
+	padding-top: 10px;*/
+    padding: 10px 5px 10px 5px;
+    background-color:#fff;
+}
+
+#attach-file ul li {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#attach-file a {
+    padding-left: 20px;
+    float: left;
+    padding-top: 4px;
+    margin-top: 10px;
+}
+
+.pdf {
+    background: url(../images/attach-icons.gif) no-repeat 0 0;
+    height: 14px;
+}
+
+.zip {
+    background: url(../images/attach-icons.gif) no-repeat 0 -19px;
+    height: 12px;
+}
+
+.image {
+    background: url(../images/attach-icons.gif) no-repeat 0 -34px;
+    height: 12px;
+}
+
+#write-send {
+    width: 230px;
+    float: left;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 5px;
+}
+
+#write-send a {
+    float: left;
+    color: #040404;
+}
+
+#write-send textarea {
+    width: 226px;
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+#morecoment {
+    width: 740px;
+    float: left;
+    background: url(../images/bgmorecoment.jpg) repeat-x;
+}
+
+#morecoment a {
+    width: 210px;
+    height: 34px;
+    background: url(../images/arrow-morecoment.gif) no-repeat 0 -34px;
+    float: left;
+    margin-left: 354px;
+}
+
+#morecoment a span {
+    display: none;
+}
+
+#top-menu {
+    float: left;
+    margin-top:40px;
+}
+
+

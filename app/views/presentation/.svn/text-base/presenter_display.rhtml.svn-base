@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Presenter Display</title>
+    <%= stylesheet_link_tag "presenter" %>
+  </head>
+  <body>
+
+    <%= javascript_include_tag :defaults %>
+
+    Presenting: <%= Chain.presentation_running? %>
+    <br><br>
+    <% unless Chain.presentation_running? %>
+      (<%= link_to 'start presentation', :controller => 'presentation', :action => 'start' %>)
+    <% else %>
+
+      <%= link_to '<<', :controller => 'presentation', :action => 'previous_slide' %>
+      | <%= link_to 'stop presentation', :controller => 'presentation', :action => 'stop' %> |
+      <%= link_to_if Slide.next_slide, '>>', :controller => 'presentation', :action => 'move_to_next_slide' %>
+
+    <% end %>
+    <br><br>
+
+        
+    <% if Chain.presentation_running? %>
+      <%= image_tag(url_for(:controller => 'slide', :action => 'png_large_preview', :id => Slide.current_slide.id), :style => 'border: 1px solid white') %>
+
+    <% end %>
+      <% next_slide = Slide.next_slide %>
+      <% if next_slide %>
+      <%= image_tag(url_for(:controller => 'slide', :action => 'png_small_preview', :id => next_slide.id), :style => 'border: 1px solid white') %>
+      <% end %>
+    <br><br>
+    <%= render :partial => 'clock'  %>
+
+
+  </body>
+</html>
+

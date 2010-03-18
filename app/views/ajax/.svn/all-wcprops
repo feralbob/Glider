@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/glider/!svn/ver/25/glider/app/views/ajax
+END
+_get_all_messages.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/glider/!svn/ver/25/glider/app/views/ajax/_get_all_messages.html.erb
+END
+_update_user_name.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/glider/!svn/ver/22/glider/app/views/ajax/_update_user_name.html.erb
+END
+_chat_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/glider/!svn/ver/25/glider/app/views/ajax/_chat_form.html.erb
+END

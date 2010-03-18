@@ -1,0 +1,230 @@
+/* - - - - - - - - - - - - - - - - - - - - -
+
+Client		: 	Glider.com
+URL 		: 	www.Glider.com
+
+Made by: Sergio Ballestero - www.web507.com
+
+- - - - - - - - - - - - - - - - - - - - - */
+@import "reset.css";
+
+body {
+    background: url(../images/bg.jpg) repeat-x top #728389;
+    /*background: url(../gfx/bg.jpg) repeat-x top #b8c0c3;*/
+
+    color: #040404;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+a { color: #040404; }
+a:hover { color: #ffce2b; }
+
+#wrap {
+    /*width: 940px;*/
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.clear { clear: both; visibility: hidden; }
+
+#feedback-tab{
+    width: 40px;
+    height: 100px;
+    position: absolute;
+    top: 45%;
+    right: 0;
+}
+
+#feedback-tab a{
+    width: 40px;
+    height: 100px;
+    background: url(../images/feedback_tab.png) no-repeat #000000;
+    float: left;
+}
+
+#feedback-tab a:hover{
+    background-color: #3a6a7f;
+}
+
+#feedback-tab span {
+    display: none;
+}
+
+#cont-feedback {
+    width: 400px;
+    height: 300px;
+    display: none;
+}
+
+#contenedor, #top, #medio, #footer {
+    /*width: 940px;*/
+    width: 1200px;
+    float: left;
+}
+
+#footer {
+    text-align: center;
+    padding: 20px 0 20px 0;
+    color: #fff;
+}
+
+#footer a {
+    color: #fff;
+}
+
+#top {
+    margin-bottom: 20px;
+}
+
+#logo {
+    width: 290px;
+    float: left;
+    margin-top:20px;
+}
+
+#btn-close {
+    width:100px;
+    float: right;
+    margin-top:38px;
+}
+
+#btn-close a {
+    color: #040404;
+}
+
+#col1 {
+    width: 180px;
+    float: left;
+    position: relative;
+}
+
+#col2 {
+    width:740px;
+    float: left;
+}
+
+#col2_big {
+    width:920px;
+    float: left;
+}
+
+#cont_slice {
+    width: 740px;
+    float: left;
+    background: url(../images/bg-contslide.jpg) no-repeat bottom;
+    padding-bottom: 62px;
+}
+
+#slice {
+    width:700px;
+    float: left;
+    height: 384px;
+    /*height: 284px;*/
+    background-color: #fff;
+    border: 1px solid #d6dadb;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 22px;
+}
+
+#cont-sliceizq {
+    width: 170px;
+    height: 420px;
+    /*height: 620px;*/
+    float: left;
+    /*padding-bottom: 100px;*/
+}
+
+.sliceizq {
+    width: 119px;
+    height: 60px;
+    float: left;
+    /*padding: 10px 10px 36px 10px;*/
+    /*padding: 10px 10px 20px 10px;*/
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+    /*background: url(../gfx/bgslice.jpg);*/
+}
+
+.slice-inactivo {
+    background: url(../images/bgslice.jpg);
+}
+
+.slice-activo {
+    background: url(../images/bgslice-active.jpg);
+}
+
+.sliceizq-info {
+    width:33px;
+    float: left;
+    font-size: 18px;
+}
+
+.sliceizq-img {
+    width:86px;
+    height: 61px;
+    overflow: hidden;
+    float: left;
+    text-align:right;
+}
+
+.sliceizq-img img {
+    border: 1px solid #d6dadb;
+}
+
+#top-degrade {
+    width: 100px;
+    position:absolute;
+    top: 439px;
+    left: -20px;
+    z-index: 400;
+}
+
+.chat_text_field {
+    width: 220px;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-right-color: gray;
+    border-left-color: gray;
+    border-bottom-color: gray;
+    border-top-color: gray;
+}
+
+li.movable {
+    cursor: move;
+    text-align: left;
+    float: left;
+    list-style: none;
+    /*  padding: 3px 10px 3px 10px; */
+    margin: 5px;
+}
+
+li.not_movable {
+    text-align: left;
+    float: left;
+    list-style: none;
+    /*  padding: 3px 10px 3px 10px; */
+    margin: 5px;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-right-color: gray;
+    border-left-color: gray;
+    border-bottom-color: gray;
+    border-top-color: gray;
+}

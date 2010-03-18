@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/glider/!svn/ver/2/glider/script
+END
+console
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/glider/!svn/ver/2/glider/script/console
+END
+server
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/glider/!svn/ver/2/glider/script/server
+END
+dbconsole
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/glider/!svn/ver/2/glider/script/dbconsole
+END
+destroy
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/glider/!svn/ver/2/glider/script/destroy
+END
+runner
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/glider/!svn/ver/2/glider/script/runner
+END
+about
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/glider/!svn/ver/2/glider/script/about
+END
+generate
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/glider/!svn/ver/2/glider/script/generate
+END
+plugin
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/glider/!svn/ver/2/glider/script/plugin
+END

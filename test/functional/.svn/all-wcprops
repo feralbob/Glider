@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/glider/!svn/ver/2/glider/test/functional
+END
+chain_exit_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/glider/!svn/ver/2/glider/test/functional/chain_exit_controller_test.rb
+END
+entrypoint_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/glider/!svn/ver/2/glider/test/functional/entrypoint_controller_test.rb
+END
+presentation_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/glider/!svn/ver/2/glider/test/functional/presentation_controller_test.rb
+END
+audience_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/glider/!svn/ver/2/glider/test/functional/audience_controller_test.rb
+END
+participant_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/glider/!svn/ver/2/glider/test/functional/participant_controller_test.rb
+END
+slide_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/glider/!svn/ver/2/glider/test/functional/slide_controller_test.rb
+END
+chain_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/glider/!svn/ver/2/glider/test/functional/chain_controller_test.rb
+END
+dashboard_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/glider/!svn/ver/2/glider/test/functional/dashboard_controller_test.rb
+END
+question_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/glider/!svn/ver/2/glider/test/functional/question_controller_test.rb
+END

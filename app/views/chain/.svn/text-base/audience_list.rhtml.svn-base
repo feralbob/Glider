@@ -1,0 +1,41 @@
+<div id="col2_big">
+  <p>Chains are short sequences of slides and are the building blocks of glider.</p>
+
+  <% if Chain.count == 0 %>
+    <p>No chains yet...</p>
+  <% end %>
+
+  <% if @current_chain %>
+    <h3>Current Chain</h3>
+    <div>
+      <%= render :partial => 'chain_slides', :object => @current_chain.slides %>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h3>Next Chains</h3>
+    <p>These are the chains of slides which can possibly come next. You can help choose which one by clicking that you like it.</p><br>
+    <table>
+      <% @current_chain.exits.each do |chain| %>
+        <tr><td>
+          <%= chain.id %>.
+        <i><%= chain.description %></i>
+        (<%= chain.votes %> votes)
+        <%= link_to 'like', :controller => 'chain', :action => 'vote_up', :id => chain.id %>
+        <br>
+        <% unless chain.slides.count == 0 %>
+          <%= render :partial => 'chain_slides', :object => chain.slides %>
+        <% end %>
+        </td></tr>
+      <% end %>
+    </table>
+  <% end %>
+</div>
+
+<%=  render :partial => 'ajax/chat_form', :layout => false %>

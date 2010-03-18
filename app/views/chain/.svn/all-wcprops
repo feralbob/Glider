@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/glider/!svn/ver/22/glider/app/views/chain
+END
+add_slides.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/glider/!svn/ver/15/glider/app/views/chain/add_slides.rhtml
+END
+list.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/glider/!svn/ver/14/glider/app/views/chain/list.rhtml
+END
+_chain_slides.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/glider/!svn/ver/2/glider/app/views/chain/_chain_slides.rhtml
+END
+edit.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/glider/!svn/ver/15/glider/app/views/chain/edit.rhtml
+END
+audience_list.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/glider/!svn/ver/33/glider/app/views/chain/audience_list.rhtml
+END

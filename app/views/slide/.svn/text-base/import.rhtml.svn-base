@@ -1,0 +1,13 @@
+
+
+<h1>Import Slides</h1>
+<%= error_messages_for :import %>
+
+<br><br>
+Import slides from a zip file of keynote png images.
+<br><br>
+<% form_for(:slide, @slide, :html => { :multipart => true }) do |f| -%>
+  <%= f.file_field :uploaded_data %>
+  <%= submit_tag 'Import' %>
+<% end -%>
+

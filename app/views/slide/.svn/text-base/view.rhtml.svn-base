@@ -1,0 +1,13 @@
+<ul>
+  <li><%= image_tag(url_for(:controller => 'slide', :action => 'png_small_preview', :id => @slide.id), :style => "border:1px solid grey") %>
+  <li><%= image_tag(url_for(:controller => 'slide', :action => 'png_large_preview', :id => @slide.id), :style => "border:1px solid grey") %>
+  <li>Slide id <%= @slide.id %>
+  <li>Slide sequence id <%= @slide.sequence_id %>
+  <% if @slide.chain_id == -1 %>
+    <li>This slide is not in a chain</li>
+  <% else %>
+    <li>This slide is in chain <%= link_to @slide.chain_id, :controller => 'chain', :action => 'view' %></li>
+  <% end %>
+</ul>
+
+

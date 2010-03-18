@@ -1,0 +1,62 @@
+<h2>Edit Chain</h2>
+
+<h3>Description</h3>
+You can give your chains one-line descriptions so the audience has some context.
+<% form_for :chain, @chain do |f| -%>
+  <%= f.error_messages %>
+  <%= f.text_field :description, :size => 50 %>
+  <%= submit_tag 'Update Description' %>
+<% end -%>
+
+
+<table><tr><td>
+<h3>Add more slides to this chain</h3>
+<p>You can <%= link_to 'add slides to this chain here', :action => 'add_slides', :id => @chain.id %>.</p>
+
+<% if @chain.slides.count == 0 %>
+  <p><b>This chain doesn't have any slides in it yet!</b></p>
+<% else %>
+  <h3>Slides within this chain</h3>
+  <p>You can drag them around to reorder them.</p>
+<% end %>
+
+<ul id="sortable_list">
+  <% @chain.slides.each do |slide| %>
+    <li id='item_<%= slide.sequence_id %>' class="movable"><img src="/slide/png_large_preview/<%= slide.id %>"></li>
+  <% end %>
+</ul>
+
+<%= sortable_element("sortable_list", :asynchronous => false, :url => { :action => "reorder", :id => @chain.id }) %>
+</td></tr>
+<tr><td>
+<h2>Following chains</h2>
+<p>When you get to the end of this chain, what happens? The audience can pick from other chains you'ce chosen for what comes next.</p>
+
+<% if @chain.exits.empty? %>
+  <p>Ruh roh, you don't have any exits for this chain yet. That means one will be chosen at random after this chain.</p>
+<% else %>
+  <h2>These are the chains which can come after this one</h2>
+  <% @chain.exits.each do |chain| %>
+    <%= render :partial => 'chain_slides', :object => chain.slides %>
+  <% end %> 
+
+<% end %>
+
+</td></tr></table>
+
+<h4>Add chains as possible exits for this chain</h4>
+
+<% if @all_other_chains.empty? %>
+  <p>There aren't any other chains to exit to, why not <%= link_to 'create some more', :action => 'list' %>?</p>
+<% else %>
+  <p>Here are the chains you can choose from. You can add these as possible exits to the above chain by clicking on them</p>
+  <% @all_other_chains.each do |chain| %>
+    <div style="clear: both;">
+      <b>Chain <%= chain.id %></b>
+      <a href="<%= url_for :controller => 'chain_exit', :action => 'create', :chain_from_id => @chain.id, :chain_exit_id => chain.id %>">
+        <%= render :partial => 'chain_slides', :object => chain.slides %>
+      </a>
+    </div>  
+  <% end %> 
+<% end %>
+

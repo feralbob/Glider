@@ -1,0 +1,30 @@
+<span id=clock>
+</span>
+
+<script>
+  function clock(){
+    if (!document.all&&!document.getElementById)
+    return
+    thelement=document.getElementById? document.getElementById("clock"): document.all.tick2
+    var date_object=new Date()
+    var hours=date_object.getHours()
+    var minutes=date_object.getMinutes()
+    var seconds=date_object.getSeconds()
+    var dn="PM"
+    if (hours<12)
+    dn="AM"
+    if (hours>12)
+    hours=hours-12
+    if (hours==0)
+    hours=12
+    if (minutes<=9)
+    minutes="0"+minutes
+    if (seconds<=9)
+    seconds="0"+seconds
+    var ctime=hours+":"+minutes+":"+seconds+" "+dn
+    thelement.innerHTML=ctime+""
+    setTimeout("clock()",1000)
+  }
+  window.onload=clock
+</script>
+<%= draggable_element('clock', :revert => false) %>

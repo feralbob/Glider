@@ -1,0 +1,10 @@
+<ul>
+  <% questions.each do |question| %>
+    <li>
+    <%= question.id %>
+    <b><%= question.question %></b>
+    (<%= question.votes %> votes)
+    <%= link_to 'like', :controller => 'question', :action => 'vote_up', :id => question.id %>
+   </li>
+  <% end %>
+</ul>

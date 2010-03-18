@@ -1,0 +1,13 @@
+<br><br>
+<h1>Welcome to Glider</h1>
+
+Welcome to Glider.
+
+<% if Slide.count == 0 %>
+  <p>You can start by <%= link_to 'importing some slides', :controller => 'slide', :action => 'import' %>.
+  <% else %>
+  <p>You have <span class="highlight_info"><%= Slide.count %></span> slides in the system. Woo!</p>
+  <% if Entrypoint.count == 0 %>
+    <span class="highlight">You need to set an entry point:</p> <%= link_to 'define one now', :controller => 'entrypoint', :action => 'view' %>.
+  <% end %>
+<% end %>

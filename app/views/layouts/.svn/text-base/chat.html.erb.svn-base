@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+  <head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <title>Glider :: Engaging the Audience</title> 
+    <meta name="description" content="Descripcion del cliente " /> 
+    <meta name="keywords" content="palabras claves " /> 
+    <meta name="summary" content="Glider Sumary" /> 
+    <meta name="googlebot" content="Index, Follow" /> 
+    <meta name="robots" content="all" /> 
+    <meta name="authors" content="web507" />
+
+    <%= javascript_include_tag :defaults %>
+
+    <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" /> 
+    <link rel="stylesheet" type="text/css" media="all" href="/stylesheets/jScrollPane.css" /> 
+    <link rel="stylesheet" href="/stylesheets/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" /> 
+
+    <link rel="stylesheet" type="text/css" media="all" href="/stylesheets/comentarios.css" />
+
+    <script type="text/javascript" src="/javascripts/jquery-1.3.2.js"></script> 
+
+    <script type="text/javascript" src="/javascripts/scroll/jquery.mousewheel.js"></script> 
+    <script type="text/javascript" src="/javascripts/scroll/jquery.em.js"></script> 
+    <script type="text/javascript" src="/javascripts/scroll/jScrollPane.js"></script> 
+
+    <script src="/javascripts/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+
+    <script type="text/javascript"> 
+
+      var jquery = jQuery.noConflict();
+
+      function comentdown() {
+        var objDiv = document.getElementById("list-scroll");
+        objDiv.scrollTop = objDiv.scrollHeight;
+      }
+      function stylescroll (obj) { 
+        if(obj == true) { jquery('#cont-sliceizq').jScrollPane({scrollbarWidth: 27, scrollbarMargin:10, showArrows:true, dragMaxHeight:25 });
+        } else { jquery('#cont-sliceizq').css("overflow", "auto"); }	
+      }
+
+      function selec_slice(obj) {
+        jquery("#cont-sliceizq .sliceizq").each(function(){
+          jquery(this).removeClass("slice-activo");
+        });
+        jquery("#"+obj).addClass("slice-activo");
+        var actslice = obj.substring(6, 5);
+        document.formcomment.comment.value = 'Question For Slice '+actslice+': ';
+      }
+
+      function showmoreslice() {
+        if(jquery("#slice").height()==284) {
+          jquery("#morecoment a").css("background-position", "34px");
+          jquery("#slice").animate({ height: '500px' }, 1000);
+        } else {
+          jquery("#morecoment a").css("background-position", "0");
+          jquery("#slice").animate({ height: '284px' }, 1000);
+        }
+      }
+
+      jquery(document).ready(function() {
+        stylescroll(true);
+        jquery(".lightbox a[rel^='prettyPhoto']").prettyPhoto({theme:'facebook'});
+        comentdown();
+      });
+
+    </script>
+
+  </head>
+
+  <body>
+    <%= javascript_include_tag :defaults %>
+    <div id="feedback-tab" class="lightbox"><a href="#cont-feedback" rel="prettyPhoto"><span>FeedBack</span></a></div>
+    <div id="cont-feedback">Feedback Content</div>
+    <script type="text/javascript">//jquery("#feedback-tab a[rel^='prettyPhoto']").prettyPhoto({theme:'facebook'});</script>
+    <div id="wrap">
+      <div id="contenedor">
+        <div id="top">
+          <div id="logo">
+            <a href="/">
+              <img src="/images/gliderlogo.png" width="277" height="48" alt="Glider" border="0" />
+            </a>
+          </div>
+          <div class="top-menu" id="top-menu">
+            <% if @is_local && params[:controller] != 'audience' %>
+              <%= render :partial => 'dashboard/local_menu' %>
+            <% else %>
+              <%= render :partial => 'audience/remote_menu' %>
+            <% end %>
+          </div>
+        </div>
+        <div id="medio">
+          <% if flash[:notice] %>
+            <div class="notice"><%= flash[:notice] %></div>
+          <% end %>
+
+          <%= yield -%>
+
+        </div>
+        <div id="footer">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

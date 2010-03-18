@@ -1,0 +1,5 @@
+<ul>
+<% chain_slides.each do |slide| %>
+  <li class="<%= @class || 'not_movable' %>"><%= image_tag(url_for(:controller => 'slide', :action => 'png_small_preview', :id => slide.id), :border=>0) %></li>
+<% end %>
+</ul>

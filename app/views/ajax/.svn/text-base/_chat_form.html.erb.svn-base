@@ -1,0 +1,39 @@
+<div id="col3">
+  <div id="cont_chat">
+    <% ret = get_all_messages  -%>
+    <div id="receive_chat">
+      <ul id="list-scroll">
+        <% unless @messages.empty? -%>
+          <% @messages.reverse_each do |m| -%>
+            <li><b><%= m.user.username %></b>
+              <ul><li><%= m.message %></li></ul>
+            </li>
+          <% end -%>
+        <% end -%>
+      </ul>
+    </div>
+    <div id="write-send">
+      <p>To ask about specific slice, first select it.</p>
+
+      <%= periodically_call_remote :frequency => '5',
+        :update => "receive_chat",
+        :complete => "comentdown();",
+        :url => { :action => 'get_all_messages' } %>
+
+      <% form_remote_tag :update => 'receive_chat',
+        :before => "$('receive_chat').update('Loading...')",
+        :url => { :action => 'add_new_message' } do %>
+        <p>
+          <%= text_field_tag :message, '', :class => 'chat_text_field' %>
+          <%= submit_tag 'Post message' %>
+        </p>
+      <% end -%>
+      <br />
+      <% form_remote_tag :update => 'div_user_name',
+        :before => "$('receive_chat').update('Loading...')",
+        :url => { :action => 'update_user_name' } do %>
+        <p><div id="div_user_name"><%= text_field_tag :user_name, chat_user, :class => 'chat_text_field' %><%= submit_tag 'change name' %></div></p>
+      <% end -%>
+    </div>
+  </div>
+</div>

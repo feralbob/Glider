@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/glider/!svn/ver/23/glider/app/views/slide
+END
+import.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/glider/!svn/ver/10/glider/app/views/slide/import.rhtml
+END
+view.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/glider/!svn/ver/10/glider/app/views/slide/view.rhtml
+END
+list.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/glider/!svn/ver/23/glider/app/views/slide/list.rhtml
+END

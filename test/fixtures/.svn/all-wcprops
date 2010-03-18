@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/glider/!svn/ver/2/glider/test/fixtures
+END
+chain_vote_tokens.yml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/glider/!svn/ver/2/glider/test/fixtures/chain_vote_tokens.yml
+END
+slides.yml
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/glider/!svn/ver/2/glider/test/fixtures/slides.yml
+END
+chain_slides.yml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/glider/!svn/ver/2/glider/test/fixtures/chain_slides.yml
+END
+chains.yml
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/glider/!svn/ver/2/glider/test/fixtures/chains.yml
+END
+question_vote_tokens.yml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/glider/!svn/ver/2/glider/test/fixtures/question_vote_tokens.yml
+END
+questions.yml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/glider/!svn/ver/2/glider/test/fixtures/questions.yml
+END
+chain_exits.yml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/glider/!svn/ver/2/glider/test/fixtures/chain_exits.yml
+END
+entrypoints.yml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/glider/!svn/ver/2/glider/test/fixtures/entrypoints.yml
+END

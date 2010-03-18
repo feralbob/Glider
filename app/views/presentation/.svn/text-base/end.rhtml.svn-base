@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>Beamer Display</title>
+    <%= stylesheet_link_tag 'beamer' %>
+  </head>
+  <body>
+    <%= javascript_include_tag :defaults %>
+    end of presentation...
+
+    <%= link_to 'Home', '/' %>
+    <%= link_to 'Reset presentation', :action => 'reset'  %>
+  </body>
+</html>

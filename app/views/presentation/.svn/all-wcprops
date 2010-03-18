@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/glider/!svn/ver/2/glider/app/views/presentation
+END
+_clock.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/glider/!svn/ver/2/glider/app/views/presentation/_clock.rhtml
+END
+presenter_display.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/glider/!svn/ver/2/glider/app/views/presentation/presenter_display.rhtml
+END
+projector_display.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/glider/!svn/ver/2/glider/app/views/presentation/projector_display.rhtml
+END
+end.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/glider/!svn/ver/2/glider/app/views/presentation/end.rhtml
+END

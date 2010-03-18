@@ -1,0 +1,23 @@
+<div id="col1">
+  <div class="scroll-pane">
+    <div id="cont-sliceizq">
+      <% @slides.each do |slide| %>
+        <div class="sliceizq slice-inactivo" id="slice<%= slide.id %>">
+          <div class="sliceizq-info"><%= slide.sequence_id %></div>
+          <div class="sliceizq-img">
+            <%= link_to_remote image_tag(url_for(:controller => 'slide', :action => 'png_small_preview', :id => slide.id), :border=>0), :update => "slice", :url => {:action => 'view', :id => slide.id} %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div id="col2">
+  <div id="cont_slice">
+    <div id="slice">
+      Click on a slide to the left to inspect it.
+    </div>
+  </div>
+</div>
+

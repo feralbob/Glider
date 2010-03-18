@@ -1,0 +1,11 @@
+<% form_for(@user) do |f| %>
+  <%= error_messages_for :user, :header_message => '', :message => '' %>
+
+  <p>
+    Provide an nickname to start<br />
+    <%= f.text_field :username, :class => 'user_box', :width => 250 %>
+  </p>
+  <p>
+    <%= f.submit "Let's go" %>
+  </p>
+<% end %>

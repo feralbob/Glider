@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/glider/!svn/ver/2/glider/vendor/plugins/preferences
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/glider/!svn/ver/2/glider/vendor/plugins/preferences/LICENSE
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/glider/!svn/ver/2/glider/vendor/plugins/preferences/Rakefile
+END
+README.rdoc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/glider/!svn/ver/2/glider/vendor/plugins/preferences/README.rdoc
+END
+preferences.gemspec
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/glider/!svn/ver/2/glider/vendor/plugins/preferences/preferences.gemspec
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/glider/!svn/ver/2/glider/vendor/plugins/preferences/init.rb
+END
+CHANGELOG.rdoc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/glider/!svn/ver/2/glider/vendor/plugins/preferences/CHANGELOG.rdoc
+END

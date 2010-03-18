@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/glider/!svn/ver/20/glider/app/helpers
+END
+participant_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/glider/!svn/ver/2/glider/app/helpers/participant_helper.rb
+END
+slide_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/glider/!svn/ver/2/glider/app/helpers/slide_helper.rb
+END
+users_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/glider/!svn/ver/3/glider/app/helpers/users_helper.rb
+END
+chain_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/glider/!svn/ver/2/glider/app/helpers/chain_helper.rb
+END
+application_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/glider/!svn/ver/20/glider/app/helpers/application_helper.rb
+END
+dashboard_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/glider/!svn/ver/2/glider/app/helpers/dashboard_helper.rb
+END
+messages_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/glider/!svn/ver/3/glider/app/helpers/messages_helper.rb
+END
+question_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/glider/!svn/ver/2/glider/app/helpers/question_helper.rb
+END
+chain_exit_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/glider/!svn/ver/2/glider/app/helpers/chain_exit_helper.rb
+END
+entrypoint_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/glider/!svn/ver/2/glider/app/helpers/entrypoint_helper.rb
+END
+presentation_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/glider/!svn/ver/2/glider/app/helpers/presentation_helper.rb
+END
+audience_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/glider/!svn/ver/2/glider/app/helpers/audience_helper.rb
+END

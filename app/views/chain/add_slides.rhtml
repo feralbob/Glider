@@ -1,0 +1,39 @@
+
+<div id="droppable">
+  Drag and drop slides here on to this text to add them to chain <%= @chain.id %>
+</div>
+
+ <%= drop_receiving_element :droppable, :url => {:action => 'addslide', :chain_id => @chain.id } %>
+
+<p>You can also <%= link_to 'go back to edit the chain itself and rearrange slides', :action => 'edit', :id => @chain.id %></p>
+<br><br>
+
+<ul>
+  <% @slides.each do |slide| %>
+   <% if slide.chain_id == -1 %>
+    <li id='<%= slide.id %>' class="movable"><img src="/slide/png_small_preview/<%= slide.id %>"></li>
+
+    <%= draggable_element(slide.id.to_s, :revert => true, :onEnd => "function(){
+          new Effect.Opacity('#{slide.id}', {from:1.0, to:0.1, duration:1});
+          new Effect.Highlight('droppable', { startcolor: '#ffffff', endcolor: '#578ac3' });
+        }") %>
+        <!-- better to put the highlight on the drop_receiving_element? --> 
+     <% else %>
+   <li id='<%= slide.id %>' class="not_movable"><img src="/slide/png_small_preview/<%= slide.id %>"></li>
+    <script type="text/javascript">
+             //<![CDATA[
+
+       new Effect.Opacity('<%=slide.id%>', { from: 1.0, to: 0.1, duration: 5.0 });
+
+       //]]>
+     </script>
+
+    <% end %>
+
+
+
+  <% end %>
+</ul>
+
+
+

@@ -1,0 +1,54 @@
+<div id="col1"> 
+  <div class="scroll-pane"> 
+    <div id="cont-sliceizq"> 
+      <% @slides.each do |slide| %>
+        <div class="sliceizq slice-inactivo" id="slice<%= slide.id %>"> 
+          <div class="sliceizq-info"><%= slide.sequence_id %></div> 
+          <div class="sliceizq-img">
+            <%= link_to_remote image_tag(url_for(:controller => 'slide', :action => 'png_small_preview', :id => slide.id), :border=>0), :update => "slice", :url => {:action => 'view', :id => slide.id} %>
+          </div> 
+        </div> 
+      <% end %>
+    </div> 
+  </div> 
+</div> 
+
+<div id="col2"> 
+  <div id="cont_slice"> 
+    <div id="slice">
+
+      <p>Chains are short sequences of slides and are the building blocks of glider.</p>
+
+      <% if Chain.count == 0 %>
+        <p>You don't have any chains yet, why not create one?</p>
+      <% end %>
+      <% @chains.each do |chain| %>
+        <h3><%= link_to "Chain #{chain.id}:", :controller => 'chain', :action => 'edit', :id => chain.id %> </h3>
+        <!--  <i><%= chain.description %></i> (<%= link_to 'edit this chain', :controller => 'chain', :action => 'edit', :id => chain.id %>)
+        -->
+
+        <% if chain.slides.count == 0 %>
+          <p>This chain has no slides, edit it to add some.</p>
+        <% else %> 
+          <div style="height: 100px; width: 700px; overflow:scroll">
+            <ul id="sortable_list<%= chain.id%>">
+              <% chain.slides.each do |slide| %>
+                <li id='item_<%= slide.sequence_id %>' class="movable" style="float: left; padding-right: 5px;"><img style="border: 1px solid grey" src="/slide/png_small_preview/<%= slide.id %>"></li>
+              <% end %>
+
+            </ul>
+
+            <%= sortable_element("sortable_list" + chain.id.to_s, :asynchronous => false, :url => { :action => "reorder", :id => chain.id }) %>
+            <!--
+
+            <%= render :partial => 'chain_slides', :object => chain.slides %>  
+            -->
+          </div>
+        <% end %>
+      <% end %>
+
+      <p><%= link_to 'create new chain', :controller => 'chain', :action => 'new' %></p>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/glider/!svn/ver/2/glider/vendor/plugins/preferences/test/app_root/app/models
+END
+user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/glider/!svn/ver/2/glider/vendor/plugins/preferences/test/app_root/app/models/user.rb
+END
+employee.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/glider/!svn/ver/2/glider/vendor/plugins/preferences/test/app_root/app/models/employee.rb
+END
+car.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/glider/!svn/ver/2/glider/vendor/plugins/preferences/test/app_root/app/models/car.rb
+END
+manager.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/glider/!svn/ver/2/glider/vendor/plugins/preferences/test/app_root/app/models/manager.rb
+END
